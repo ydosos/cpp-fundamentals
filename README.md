@@ -22,9 +22,9 @@ The double qoutes means we try to insert a file from the current directory, and 
 
 To avoid writing std:: (or every other library) , before the start of the main function, put in the command "using namespace std;"
 ```cpp
-    using namespace std;
-    int main()
-    {
-    }
+   using namespace std;
+   int main()
+   {
+   }
 ```
 This tells the compiler to assume we are using the library.
