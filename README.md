@@ -85,3 +85,96 @@ int main()
 ```
 ## Arithmetic Operations
 ----
+![image](https://user-images.githubusercontent.com/98479568/163413847-306be1f5-1d02-4ce3-b38d-63dec5ea2249.png)
+
+Prefix operators increment the value of the variable, then return the reference to the variable.
+Postfix operators create a copy of the variable and increments the value of the variable. Then it returns a copy from BEFORE the increment.
+
+## Control Flow
+----
+
+### Rational Operators
+
+![image](https://user-images.githubusercontent.com/98479568/163414526-78d188e6-d383-4d42-8523-b32b09925ff8.png)
+
+### Logic Operators
+
+![image](https://user-images.githubusercontent.com/98479568/163414710-10ab0c90-8b97-4a3d-8099-67b29383aac1.png) 
+
+### If-Else Statements
+
+```cpp
+if(boolean expression)
+{
+     //statements to execute if the boolean expression is true
+}
+else if (boolean expression #2)
+{
+     //statements to execute if the 'else if' boolean expression  #2 is true
+}
+
+else
+{
+     //statements to execute if the boolean expressions 
+    //'if' and 'else if'  are false
+}
+```
+### Switch Statements
+
+```cpp
+switch(expression)
+{
+     case constant-expression : statements;
+                               break; (this is optional);
+     case constant-expression : statements;
+                               break; (this is optional);
+     ...
+
+     default : //optional
+        statements;
+}
+
+```
+
+### For Loops
+
+```cpp
+for ( declaration : range ) statement;
+
+for (initialization; condition; increase) statement;
+
+```
+
+To create infinite loop: 
+
+```cpp
+for( ; ;)
+{
+     statements
+}
+```
+
+### While Loops
+
+```cpp
+while(condition)
+{
+     statements;
+}
+
+```
+
+To create infinite loop: 
+
+```cpp
+while(1)
+{
+     std::cout<<"This while loop will run forever\n";
+}
+
+```
+
+#### Break and Continue 
+Break statement will end the loop and begin executing the first statement that comes after the end of the loop.
+
+The continue statement: The continue statement will force the next iteration to be executed.
