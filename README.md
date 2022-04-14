@@ -178,3 +178,6 @@ while(1)
 Break statement will end the loop and begin executing the first statement that comes after the end of the loop.
 
 The continue statement: The continue statement will force the next iteration to be executed.
+
+## Pointers
+----
