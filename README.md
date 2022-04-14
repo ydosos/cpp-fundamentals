@@ -16,7 +16,8 @@ int main()
 Any line that has a hash sign at the start is a preprocessor directive. Include means add the declarations of the given library. In this case we are adding the declarations of the iostream library. The brackets means we try to insert a file from the directory where all the standard libraries are stored.
 
 ```cpp
-#include "main.hpp"
+#include "main.hpp"![image](https://user-images.githubusercontent.com/98479568/163424773-cf0ef56e-53ed-4603-bc2c-7952c29913d8.png)
+
 ```
 The double qoutes means we try to insert a file from the current directory, and if it is not there then look in the directory where all the standard libraries are stored.
 
@@ -181,3 +182,26 @@ The continue statement: The continue statement will force the next iteration to 
 
 ## Pointers
 ----
+
+The address of a variable can be obtained by preceding the name of a variable with an ampersand sign (&), known as address-of operator. For example: 
+```cpp
+foo = &myvar;
+
+```
+A variable which stores the address of another variable is called a pointer. Pointers are said to "point to" the variable whose address they store.
+* is the dereference operator, and can be read as "value pointed to by".
+
+```cpp
+baz = *foo;
+
+```
+![image](https://user-images.githubusercontent.com/98479568/163424355-cb057e46-fb41-4b52-aef5-398909828273.png)
+
+### Arrow Operator
+The arrow operator gives the value held by member to class, structure or union instance pointer_name
+
+```cpp
+(pointer_name)->(member)
+
+```
+The expressions a->member and (*(a)).member (where a represents a pointr) yield identical results
