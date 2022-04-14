@@ -198,10 +198,10 @@ baz = *foo;
 ![image](https://user-images.githubusercontent.com/98479568/163424355-cb057e46-fb41-4b52-aef5-398909828273.png)
 
 ### Arrow Operator
-The arrow operator gives the value held by member to class, structure or union instance pointer_name
+The arrow operator gives the value held by member to class, structure or union instance pointer_name.
 
 ```cpp
 (pointer_name)->(member)
 
 ```
-The expressions a->member and (*(a)).member (where a represents a pointr) yield identical results
+The expressions a->member and (*(a)).member (where a represents a pointr) yield identical results.
