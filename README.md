@@ -47,7 +47,7 @@ int main()
 {
   std::cout << "Hello world";
   return 0;
-  }
+}
 ```
 Any line that has a hash sign at the start is a preprocessor directive. Include means add the declarations of the given library. In this case we are adding the declarations of the iostream library. The brackets means we try to insert a file from the directory where all the standard libraries are stored.
 
