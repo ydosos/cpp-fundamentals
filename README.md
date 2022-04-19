@@ -494,16 +494,16 @@ int main() {
   
   // insert insert value after position.
   it  = vectorName.begin();
-  vectorInts.insert(it + position, value);
+  vectorName.insert(it + position, value);
   
   // emplace insert value after position.
   // Reallocation happens only if there is a need for more space.
-  it  = vectorInts.begin();
-  vectorInts.emplace(it, -1);
+  it  = vectorName.begin();
+  vectorName.emplace(it, -1);
   
   // erase remove specific elements from the vector.
-  vectorInts.erase(vectorInts.begin() + positon); // Erase the element in position in the vector  
-  vectorInts.erase(vectorInts.begin() + start, vectorInts.begin() + end); // Erase a range of elements from start (include) to end (exclude). 
+  vectorName.erase(vectorInts.begin() + positon); // Erase the element in position in the vector  
+  vectorName.erase(vectorInts.begin() + start, vectorInts.begin() + end); // Erase a range of elements from start (include) to end (exclude). 
     
       
 ```
