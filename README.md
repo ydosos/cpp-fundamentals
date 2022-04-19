@@ -205,3 +205,39 @@ The arrow operator gives the value held by member to class, structure or union i
 
 ```
 The expressions a->member and (*(a)).member (where a represents a pointr) yield identical results.
+We use pointers for DMA (Dynamic Memory Allocation). Dynamic memory allocation is the process of assigning the memory space during the execution time or the run time, mostly used when we do not know how much amount of memory would be needed for the program beforehand.
+
+```cpp
+int len;
+cin >> len;
+//Below variables are allocated memory dynamically.
+int *pointer1 = new int;
+int *pointer2; = new int[len];
+
+// Dynamically allocated memory is deallocated.
+delete pointer1;
+delete[] pointer2;
+
+```
+
+## Arrays
+----
+
+C++ arrays can be declared as: 
+```cpp
+variableType arrayName [ ] = {variables to be stored in the array};
+
+// or:
+variableType arrayName[array size]
+
+```
+Multidimensional arrays in C++ are initialized with the format:
+```cpp
+variableType arrayName size of dim.1][size of dim. 2] ...[size of dim. n] = {variables to be stored in the array}; 
+
+// or:
+variableType arrayName[size of dim.1][size of dim. 2] ...[size of dim. n];
+
+```
+
+
