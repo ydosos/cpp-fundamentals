@@ -1,5 +1,18 @@
 # C++ Tutorial
 
+Table of Contents
+=================
+* [Basics](#basics)
+  * [Program Structure](#program-structure)
+  * [Constants](#constants)
+  * [Enumerated Constants](#enumerated-constants)
+  * [File IO](#file-io)
+  * [Header Files](#header_files)
+  * [User Input](#user_input)
+* [Arithmetic Operations](#arithmetic_operations)
+* [Control Flow](#control_flow)
+
+
 
 ## Basics
 ----
@@ -38,7 +51,8 @@ const int weightGoal = 100;
 ### Enumerated Constants
 This means the programmer can create a new variable type and then assign a finite number of values to it. 
 ```cpp
-enum type_name {
+enum type_name 
+{
   value1,
   value2,
   value3,
