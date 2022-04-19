@@ -297,8 +297,8 @@ The syntax to define a class:
 class ClassName
 {
 // The default is to make all members private
-  member1;
-  member2;
+  type member1;
+  type member2;
   ...
 
 // Functions that access and/or modify data values in classes are called mutators. 
@@ -316,6 +316,7 @@ ClassName::ClassName()
   member2 = value;
 }
 
+// Definition of destructor
 ClassName::~ClassName()
 {
   statements;
@@ -349,14 +350,132 @@ returnedType operator + (Type parameter)
 ### Generic Functions
 ```cpp
 template <typename T, typename U> //
-T functionName (T  parameter1,U  parameter2,...)
+T functionName (T  parameter1,U  parameter2) // Whichever variable type is listed first, is the variable type that is returned.
 {
     function statements;
+    return TtypeValue;
+}
+```
+### Generic Classes
+If the class is going to accept strings, make sure you include 'using namespace std;' or it won't recognize the string variable.
+You will have to add the template command to each member function.
+```cpp
+template<class T>
+class ClassName
+{
+// The default is to make all members private
+  knownType member1;
+  T member2;
+  ...
+
+// Functions that access and/or modify data values in classes are called mutators. 
+public:
+  ClassName(); // Decalration of constructor
+  returnedType mutatorName(function parameters);
+  T mutatorName(T parameter);
+
+  ~ClassName(); // Decalration of destructor
+  ...
+} ;
+
+// Definition of constructor
+ClassName::ClassName()
+{
+  member1 = value;
+  member2 = value;
+}
+
+// Definition of destructor
+ClassName::~ClassName()
+{
+  statements;
+}
+
+T ClassName<T>:: mutatorName(function parameters)
+{
+  function statements;
+}
+
+```
+## Inheritance
+----
+We can derive a class from another class, so the derived class can access members and functions of the base class.
+There are three types of access control: public, private, and protected.
+* Public Inheritance means all public members of the base class are accessible to the derived class
+* Private Inheritance means all members of the base class are private to the derived class
+* Protected Inheritance means all members of the base class are protected to the derived class.
+It is very rare to have a protected or private inheritance, the vast majority of the time inheritance is public.
+
+```cpp
+template <typename T, typename U> //
+T functionName (T  parameter1,U  parameter2) // Whichever variable type is listed first, is the variable type that is returned.
+{
+    function statements;
+    return TtypeValue;
 }
 ```
 
+## Polymorphism
+----
 
+### Compile time Polymorphism - Overloading 
+#### Function Overloading 
+Function Overloading will allow us to use the same function name for different functions. As long as the argument list is different, the compiler will be able to choose the correct definition. 
 
+#### Overloading Operators
+The function must specify a return type and use the keyword 'operator' followed by the wanted sign.
 
+```cpp
+returnedType operator + (Type parameter)
+{
+  return statement;
+}
+```
 
+### Runtime Polymorphism - Virtual Functions 
+
+```cpp
+class baseClass
+{
+  public:
+    virtual returnedType mutatorName1()
+    { 
+      statements for baseClass;
+    }
+   
+    returnedType mutatorName2()
+    {
+      statements for baseClass;
+    }
+};
+   
+class derivedClass :public baseClass
+{
+  public:
+    // mutatorName1 () is already virtual function in derived class. 
+    returnedType mutatorName1() 
+    { 
+      statements for derivedClass;    
+    }
+    
+    // Non-virtual function, binded at compile time.
+    returnedType mutatorName2()
+    { 
+      statements for derivedClass; 
+    }
+};
+```
+
+## Vectors and Iterators
+----
+We can describe vectors as a dynamic array  with the ability to resize itself when an element is added or removed, with their storage being handled automatically by the container. Vector elements are placed in contiguous storage so that they can be accessed and traversed using iterators.
+
+```cpp
+#include <vector> 
+
+int main() {
+    std::vector<Type> vectorName; // The vector has size 0 when we instantiate it.
+    vectorName.resize(number); // Changing the size to 'nunber';
+
+```
 
