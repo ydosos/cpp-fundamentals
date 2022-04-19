@@ -327,3 +327,36 @@ returnVariable ClassName:: mutatorName(function parameters)
 }
 
 ```
+### this Pointer
+'this' returns the address of the calling object.
+
+## Overloading 
+----
+Function Overloading will allow us to use the same function name for different functions. As long as the argument list is different, the compiler will be able to choose the correct definition. 
+
+### Overloading Operators
+The function must specify a return type and use the keyword 'operator' followed by the wanted sign.
+
+```cpp
+returnedType operator + (Type parameter)
+{
+  return statement;
+}
+```
+
+## Templates 
+----
+### Generic Functions
+```cpp
+template <typename T, typename U> //
+T functionName (T  parameter1,U  parameter2,...)
+{
+    function statements;
+}
+```
+
+
+
+
+
+
