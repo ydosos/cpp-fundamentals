@@ -240,4 +240,90 @@ variableType arrayName[size of dim.1][size of dim. 2] ...[size of dim. n];
 
 ```
 
+## Functions
+----
+All functions must have:
+* Decleration: the statement of how the fucntion is to be called, written bedore main().
+* Definition: the statements of the task the function performs when called. 
 
+```cpp
+// Declaration
+returnedType functionName(parameter1, parameter2, ...,parameterN);
+
+int main()
+{ 
+  ...
+  functionName(parameter1, parameter2, ..., parameterN);
+  ...
+}
+// Definition
+returnedType functionName(parameter1, parameter2, ...,parameterN)
+{
+     statements;
+     return x;
+}
+```
+
+### Functions in Header Files
+Move the include statements and the function declaration and the function definition to the header file.
+
+### Pass Variables by Reference
+Passing the address of the variable instead of the variable so the function change the value at the address.
+```cpp
+// Declaration
+returnedType functionName(int &parameter);
+
+int main()
+{
+     ...
+     functionName(parameter);
+     ...
+}
+// Definition
+returnedType functionName(int &parameter)
+{
+     statements;
+     return x;
+}
+```
+
+## Classes
+----
+Special functions:
+* Constructor - special function that is executed whenever we create a new instance of the class. It is used to set initial values of data members of the class. 
+* Destructor - special function that is executed automatically whenever an object goes out of scope. Important role of destructors to release memory that was allocated by the class constructor and member functions.
+The syntax to define a class:
+```cpp
+class ClassName
+{
+// The default is to make all members private
+  member1;
+  member2;
+  ...
+
+// Functions that access and/or modify data values in classes are called mutators. 
+public:
+  ClassName(); // Decalration of constructor
+  returnedType mutatorName(function parameters);
+  ~ClassName(); // Decalration of destructor
+  ...
+} ;
+
+// Definition of constructor
+ClassName::ClassName()
+{
+  member1 = value;
+  member2 = value;
+}
+
+ClassName::~ClassName()
+{
+  statements;
+}
+
+returnVariable ClassName:: mutatorName(function parameters)
+{
+  function statements;
+}
+
+```
