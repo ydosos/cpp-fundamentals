@@ -470,12 +470,31 @@ class derivedClass :public baseClass
 ----
 We can describe vectors as a dynamic array  with the ability to resize itself when an element is added or removed, with their storage being handled automatically by the container. Vector elements are placed in contiguous storage so that they can be accessed and traversed using iterators.
 
+Iterators are used to point at the memory addresses of STL containers (for example: vectors).
+
 ```cpp
 #include <vector> 
 
 int main() {
-    std::vector<Type> vectorName; // The vector has size 0 when we instantiate it.
-    vectorName.resize(number); // Changing the size to 'nunber';
-
+  std::vector<Type> vectorName; // The vector has size 0 when we instantiate it.
+  vectorName.resize(number); // Changing the size to 'number';
+  
+  //creating an iterator for the vector
+  std::vector<int> ::iterator itr;
+  for (itr = vectorName.begin(); itr != vectorName.end(); ++itr)
+    // Remember to dereference the iterator to get the value of the vector.
+    statements;
+   
+  // Useful and common functions 
+  vectorName.assign(number of elements, value); // assign writes over the elements in the vector.
+  vectorName.push_back(value); // push_back add elements to the end of a vector.
+  
+  // Insert value atfer place.
+  it  = vectorName.begin();
+  vectorInts.insert(it + place, value);
+  
+  //
+    
+      
 ```
 
