@@ -488,12 +488,22 @@ int main() {
   // Useful and common functions 
   vectorName.assign(number of elements, value); // assign writes over the elements in the vector.
   vectorName.push_back(value); // push_back add elements to the end of a vector.
+  vectorName.pop_back(); // pop_back remove the last element in the vector but does not return it.
+  vectorInts.clear(); // clear the vector. 
   
-  // Insert value atfer place.
+  
+  // insert insert value after position.
   it  = vectorName.begin();
-  vectorInts.insert(it + place, value);
+  vectorInts.insert(it + position, value);
   
-  //
+  // emplace insert value after position.
+  // Reallocation happens only if there is a need for more space.
+  it  = vectorInts.begin();
+  vectorInts.emplace(it, -1);
+  
+  // erase remove specific elements from the vector.
+  vectorInts.erase(vectorInts.begin() + positon); // Erase the element in position in the vector  
+  vectorInts.erase(vectorInts.begin() + start, vectorInts.begin() + end); // Erase a range of elements from start (include) to end (exclude). 
     
       
 ```
