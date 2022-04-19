@@ -7,11 +7,33 @@ Table of Contents
   * [Constants](#constants)
   * [Enumerated Constants](#enumerated-constants)
   * [File IO](#file-io)
-  * [Header Files](#header_files)
-  * [User Input](#user_input)
-* [Arithmetic Operations](#arithmetic_operations)
-* [Control Flow](#control_flow)
-
+  * [Header Files](#header-files)
+  * [User Input](#user-input)
+* [Arithmetic Operations](#arithmetic-operations)
+* [Control Flow](#control-flow)
+  * [Rational Operators](#rational-operators)
+  * [Logic Operators](#logic-operators)
+  * [If-Else Statements](#if-else-statements)
+  * [Switch Statements](#switch-statements)
+  * [For Loops](#for-loops)
+  * [While Loops](#while-loops)
+  * [Break and Continue](#break-and-continue)
+* [Pointers](#pointers)
+  * [Arrow Operator](#arrow-operator)
+* [Arrays](#arrays)
+* [Functions](#functions)
+  * [Functions in Header Files](#functions-in-header-files)
+  * [Pass Variables by Reference](#pass-variables-by-reference)
+* [Classes](#classes)
+  * [this Pointer](#this-pointer)
+* [Templates](#templates)
+  * [Generic Functions](#generic-functions)
+  * [Generic Classes](#generic-classes)
+* [Inheritance](#inheritance)
+* [Polymorphism](#polymorphism)
+  * [Compile Time Polymorphism - Overloading](#compile-time-polymorphism---overloading)
+  * [Runtime Polymorphism - Virtual Functions](#runtime-polymorphism---virtual-functions)
+* [Vectors and Iterators](#vectors-and-iterators)
 
 
 ## Basics
@@ -345,20 +367,6 @@ returnVariable ClassName:: mutatorName(function parameters)
 ### this Pointer
 'this' returns the address of the calling object.
 
-## Overloading 
-----
-Function Overloading will allow us to use the same function name for different functions. As long as the argument list is different, the compiler will be able to choose the correct definition. 
-
-### Overloading Operators
-The function must specify a return type and use the keyword 'operator' followed by the wanted sign.
-
-```cpp
-returnedType operator + (Type parameter)
-{
-  return statement;
-}
-```
-
 ## Templates 
 ----
 ### Generic Functions
@@ -432,7 +440,7 @@ T functionName (T  parameter1,U  parameter2) // Whichever variable type is liste
 ## Polymorphism
 ----
 
-### Compile time Polymorphism - Overloading 
+### Compile Time Polymorphism - Overloading 
 #### Function Overloading 
 Function Overloading will allow us to use the same function name for different functions. As long as the argument list is different, the compiler will be able to choose the correct definition. 
 
