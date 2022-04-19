@@ -524,8 +524,10 @@ int main() {
   vectorName.emplace(it, -1);
   
   // erase remove specific elements from the vector.
-  vectorName.erase(vectorInts.begin() + positon); // Erase the element in position in the vector  
-  vectorName.erase(vectorInts.begin() + start, vectorInts.begin() + end); // Erase a range of elements from start (include) to end (exclude). 
+  // Erase the element in position in the vector.
+  vectorName.erase(vectorInts.begin() + positon);
+  // Erase a range of elements from start (include) to end (exclude).
+  vectorName.erase(vectorInts.begin() + start, vectorInts.begin() + end);  
     
       
 ```
