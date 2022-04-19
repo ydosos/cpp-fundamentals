@@ -515,19 +515,19 @@ int main() {
   
   
   // insert insert value after position.
-  it  = vectorName.begin();
-  vectorName.insert(it + position, value);
+  itr  = vectorName.begin();
+  vectorName.insert(itr + position, value);
   
   // emplace insert value after position.
   // Reallocation happens only if there is a need for more space.
-  it  = vectorName.begin();
-  vectorName.emplace(it, -1);
+  itr  = vectorName.begin();
+  vectorName.emplace(itr + position, value);
   
   // erase remove specific elements from the vector.
   // Erase the element in position in the vector.
-  vectorName.erase(vectorInts.begin() + positon);
+  vectorName.erase(vectorName.begin() + positon);
   // Erase a range of elements from start (include) to end (exclude).
-  vectorName.erase(vectorInts.begin() + start, vectorInts.begin() + end);  
+  vectorName.erase(vectorName.begin() + start, vectorName.begin() + end);  
     
       
 ```
