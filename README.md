@@ -1,7 +1,8 @@
-# C++ Tutorial
-
-Table of Contents
+C++ Tutorial
 =================
+
+## Table of Contents
+
 * [Basics](#basics)
   * [Program Structure](#program-structure)
   * [Constants](#constants)
