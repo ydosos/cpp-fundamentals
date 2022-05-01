@@ -5,6 +5,7 @@ C++ Tutorial
 
 * [Basics](#basics)
   * [Program Structure](#program-structure)
+  * [Namespace](#namespace)
   * [Constants](#constants)
   * [Enumerated Constants](#enumerated-constants)
   * [File IO](#file-io)
