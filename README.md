@@ -102,6 +102,12 @@ The header file (.hpp) contain informatiom about how to do tasks while the main 
 #include "main_header.hpp"
 ```
 
+Header files available in C++ for Input/Output operations are: 
+
+* iostream: iostream stands for standard input-output stream. This header file contains definitions of objects like cin, cout, cerr, etc.
+* iomanip: iomanip stands for input-output manipulators. The methods declared in these files are used for manipulating streams. This file contains definitions of setw, setprecision, etc.
+* fstream: This header file mainly describes the file stream. This header file is used to handle the data being read from a file as input or data being written into the file as output.
+
 ### User Input
 The function std::cin will not retrieve strings that have a space in them. It will see the space as the end of the input. We will obviously need a method to enter strings. C++ has the function getline().
 
