@@ -67,6 +67,10 @@ int main()
 ```
 This tells the compiler to assume we are using the library.
 
+There are two kinds of values:
+* lvalue - a reference to the variable to which we can further assign (for example: ++a).
+* rvalue - a value like the value of an expression which is not stored (for example: a++).
+
 ### Namespace
 Namespaces allow us to group named entities that otherwise would have global scope into narrower scopes, giving them namespace scope. This allows organizing the elements of programs into different logical scopes referred to by names.
 * Namespace declarations appear only at global scope.
@@ -123,6 +127,8 @@ The header file (.hpp) contain informatiom about how to do tasks while the main 
 ```cpp
 #include "main_header.hpp"
 ```
+
+bits/stdc++ - a header file that includes every standard library.  
 
 Header files available in C++ for Input/Output operations are: 
 
