@@ -1,4 +1,4 @@
-C++ Tutorial
+C++ Fo
 =================
 
 ## Table of Contents
@@ -216,6 +216,10 @@ for ( declaration : range ) statement;
 for (initialization; condition; increase) statement;
 
 ```
+There are three loop control statements:
+* break - used to terminate the loop.
+* continue - forces to execute the next iteration of the loop. 
+* goto - referred to as unconditional jump statement can be used to jump from one point to another within a function ( goto label , label: ).
 
 To create infinite loop: 
 
