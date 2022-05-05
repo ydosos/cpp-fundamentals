@@ -1,4 +1,4 @@
-C++ Fo
+C++ Fundamentals
 =================
 
 ## Table of Contents
